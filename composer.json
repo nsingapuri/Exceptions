@@ -1,0 +1,25 @@
+{
+    "name": "nsingapuri/exception",
+    "description": "Typed PHP Exceptions",
+    "type": "library",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Nalin Singapuri",
+            "email": "nalins@gmail.com",
+            "homepage": "http://nalin.singapuri.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : "^5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "nsingapuri\\exception\\": "src/Exception"
+        }
+    }
+}
