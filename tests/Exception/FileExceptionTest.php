@@ -24,8 +24,7 @@ class FileExceptionTest extends PHPUnit_Framework_TestCase
     /**
      * Text FileException::__construct()
      *
-     * @covers FileException::__construct()
-     * @return void
+     * @cover FileException::__construct()
      */
     public function testConstructor()
     {

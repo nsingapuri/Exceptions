@@ -24,8 +24,7 @@ class FileNotFoundExceptionTest extends PHPUnit_Framework_TestCase
     /**
      * Text FileNotFoundException::__construct()
      *
-     * @covers FileNotFoundException::__construct()
-     * @return void
+     * @cover FileNotFoundException::__construct()
      */
     public function testConstructor()
     {

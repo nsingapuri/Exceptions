@@ -24,8 +24,7 @@ class FileUnopenableExceptionTest extends PHPUnit_Framework_TestCase
     /**
      * Text FileUnopenableException::__construct()
      *
-     * @covers FileUnopenableException::__construct()
-     * @return void
+     * @cover FileUnopenableException::__construct()
      */
     public function testConstructor()
     {
