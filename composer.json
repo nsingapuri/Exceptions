@@ -1,8 +1,8 @@
 {
-    "name": "nsingapuri/exception",
+    "name": "nsingapuri/files",
     "description": "Typed PHP Exceptions",
     "source": {
-        "url": "git://github.com/nsingapuri/exceptions.git",
+        "url": "git://github.com/nsingapuri/files.git",
         "type": "git",
         "reference": "master"
     },
@@ -17,13 +17,15 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php" : "^5.5"
+        "php" : "^5.5",
+        "myclabs/php-enum": "^1.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.5"
     },
     "autoload": {
         "psr-4": {
+            "nsingapuri\\file\\": "src/File",
             "nsingapuri\\exception\\": "src/Exception"
         }
     }
