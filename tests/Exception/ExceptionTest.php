@@ -3,11 +3,11 @@
  * ExceptionTest
  *
  * @package    nsingapuri
- * @subpackage exception
+ * @subpackage files
  * @author     Nalin Singapuri - http://nalin.singapuri.com
  * @copyright  2016
  * @license    GPL
- * @link       https://github.com/nsingapuri/exception
+ * @link       https://github.com/nsingapuri/files
  *
  * PHP version >= 5.5
  **/
@@ -24,7 +24,9 @@ class ExceptionTest extends PHPUnit_Framework_TestCase
     /**
      * Text Exception::__construct()
      *
-     * @cover Exception::__construct()
+     * @return void
+     *
+     * @covers nsingapuri\exception\Exception::__construct()
      */
     public function testConstruct()
     {

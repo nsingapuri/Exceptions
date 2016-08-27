@@ -3,11 +3,11 @@
  * FileException
  *
  * @package    nsingapuri
- * @subpackage exceptions
+ * @subpackage files
  * @author     Nalin Singapuri - http://nalin.singapuri.com
  * @copyright  2016
  * @license    GPL
- * @link       https://github.com/nsingapuri/Exceptions
+ * @link       https://github.com/nsingapuri/files
  *
  * PHP version >= 5.5
  **/
