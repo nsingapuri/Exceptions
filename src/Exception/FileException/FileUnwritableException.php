@@ -1,13 +1,13 @@
 <?php
 /**
- * FileUnwriteableException
+ * FileUnwritableException
  *
  * @package    nsingapuri
- * @subpackage exception
+ * @subpackage files
  * @author     Nalin Singapuri - http://nalin.singapuri.com
  * @copyright  2016
  * @license    GPL
- * @link       https://github.com/nsingapuri/exception
+ * @link       https://github.com/nsingapuri/files
  *
  * PHP version >= 5.5
  **/
@@ -15,9 +15,9 @@
 namespace nsingapuri\exception\FileException;
 
 /**
- * FileUnwriteableException: FileUnopenableException for when a file cannot be opened in write or append mode
+ * FileUnwritableException: FileUnopenableException for when a file cannot be opened in write or append mode
  **/
-class FileUnwriteableException extends FileUnopenableException
+class FileUnwritableException extends FileUnopenableException
 {
 
 

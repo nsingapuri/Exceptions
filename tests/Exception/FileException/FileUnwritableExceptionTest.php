@@ -1,36 +1,38 @@
 <?php
 /**
- * FileUnwriteableExceptionTest
+ * FileUnwritableExceptionTest
  *
  * @package    nsingapuri
- * @subpackage exception
+ * @subpackage files
  * @author     Nalin Singapuri - http://nalin.singapuri.com
  * @copyright  2016
  * @license    GPL
- * @link       https://github.com/nsingapuri/exception
+ * @link       https://github.com/nsingapuri/files
  *
  * PHP version >= 5.5
  **/
 
-use nsingapuri\exception\FileException\FileUnwriteableException;
+use nsingapuri\exception\FileException\FileUnwritableException;
 
 /**
- * FileUnwriteableExceptionTest: Unit test for FileUnwriteableException class
+ * FileUnwritableExceptionTest: Unit test for FileUnwriteableException class
  **/
-class FileUnwriteableExceptionTest extends PHPUnit_Framework_TestCase
+class FileUnwritableExceptionTest extends PHPUnit_Framework_TestCase
 {
 
 
     /**
      * Text FileUnwriteableException::__construct()
      *
-     * @cover FileUnwriteableException::__construct()
+     * @return void
+     *
+     * @covers nsingapuri\exception\FileException\FileUnwritableException::__construct()
      */
     public function testConstructor()
     {
         $filename = 'file';
 
-        $e = new FileUnwriteableException($filename);
+        $e = new FileUnwritableException($filename);
         $this->assertInstanceOf(nsingapuri\exception\FileException\FileUnopenableException::class, $e);
         $this->assertInstanceOf(nsingapuri\exception\FileException::class, $e);
         $this->assertInstanceOf(nsingapuri\exception\RuntimeException::class, $e);
