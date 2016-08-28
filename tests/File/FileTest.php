@@ -23,7 +23,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::__construct() to ensure it sets file::$fileName
+     * Get a FileMock test double, with $methods ready to be overridden
      *
      * @param string[] $methods The methods to mock.
      *
@@ -42,7 +42,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::__construct() to ensure it sets File::$fileName
+     * Test File::__construct() to ensure it sets File::$fileName
      *
      * @return void
      *
@@ -66,7 +66,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::__construct() to ensure it sets File::$filePath
+     * Test File::__construct() to ensure it sets File::$filePath
      *
      * @return void
      *
@@ -90,7 +90,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::__construct() to ensure it sets File::$mode
+     * Test File::__construct() to ensure it sets File::$mode
      *   ensure it calls file::open()
      *
      * @return void
@@ -114,7 +114,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::__construct() to ensure it calls File::open()
+     * Test File::__construct() to ensure it calls File::open()
      *
      * @return void
      *
@@ -136,7 +136,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::__destruct() to ensure it calls File::close()
+     * Test File::__destruct() to ensure it calls File::close()
      *
      * @return void
      *
@@ -155,7 +155,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::isValid() to ensure it throws FileNotFoundException for file
+     * Test File::isValid() to ensure it throws FileNotFoundException for file
      *
      * @return void
      *
@@ -172,7 +172,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::isValid() to ensure it throws FileNotFoundException for directory
+     * Test File::isValid() to ensure it throws FileNotFoundException for directory
      *
      * @return void
      *
@@ -189,7 +189,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::isValid() to ensure it throws FileUnreadableException in read mode
+     * Test File::isValid() to ensure it throws FileUnreadableException in read mode
      *
      * @return void
      *
@@ -208,7 +208,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::isValid() to ensure it succeeds in read mode
+     * Test File::isValid() to ensure it succeeds in read mode
      *
      * @return void
      *
@@ -225,7 +225,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::isValid() to ensure it throws FileUnwritableException in write mode
+     * Test File::isValid() to ensure it throws FileUnwritableException in write mode
      *
      * @return void
      *
@@ -244,7 +244,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::isValid() to ensure it succeeds in write mode
+     * Test File::isValid() to ensure it succeeds in write mode
      *
      * @return void
      *
@@ -261,7 +261,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::isValid() to ensure it throws FileUnreadableException in append mode
+     * Test File::isValid() to ensure it throws FileUnreadableException in append mode
      *
      * @return void
      *
@@ -280,7 +280,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::isValid() to ensure it throws FileUnwritableException in append mode
+     * Test File::isValid() to ensure it throws FileUnwritableException in append mode
      *
      * @return void
      *
@@ -299,7 +299,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::isValid() to ensure it succeeds in append mode
+     * Test File::isValid() to ensure it succeeds in append mode
      *
      * @return void
      *
@@ -316,7 +316,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::isValid() to ensure it throws InvalidArgumentException
+     * Test File::isValid() to ensure it throws InvalidArgumentException
      *
      * @return void
      *
@@ -335,7 +335,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::open() to ensure it calls File::isValid on a file in read mode
+     * Test File::open() to ensure it calls File::isValid on a file in read mode
      *
      * @return void
      *
@@ -361,7 +361,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::open() to ensure it calls File::isValid twice on a file and on directory in write mode when
+     * Test File::open() to ensure it calls File::isValid twice on a file and on directory in write mode when
      *   FileNotFoundException is thrown by isValid
      *
      * @return void
@@ -395,7 +395,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::open() to ensure it calls File::isValid twice on a file and on directory in write mode when
+     * Test File::open() to ensure it calls File::isValid twice on a file and on directory in write mode when
      *   FileUnwritableException is thrown by isValid
      *
      * @return void
@@ -429,7 +429,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::open() to ensure it works in read mode
+     * Test File::open() to ensure it works in read mode
      *
      * @return void
      *
@@ -449,7 +449,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::open() to ensure it works in write mode
+     * Test File::open() to ensure it works in write mode
      *
      * @return void
      *
@@ -469,7 +469,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::open() to ensure it works in append mode
+     * Test File::open() to ensure it works in append mode
      *
      * @return void
      *
@@ -489,7 +489,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::close() to ensure it ignores null File::$handle
+     * Test File::close() to ensure it ignores null File::$handle
      *
      * @return void
      *
@@ -509,7 +509,7 @@ class FileTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text File::close() to ensure to ensure it sets File::$handle
+     * Test File::close() to ensure to ensure it sets File::$handle
      *
      * @return void
      *

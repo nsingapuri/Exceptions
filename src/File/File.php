@@ -161,7 +161,7 @@ abstract class File
         // Open file.
         $this->handle = @fopen($path, $this->mode);
         if ($this->handle === false) {
-            throw new FileUnopenableException($this->fileName);
+            throw new FileUnopenableException("{$this->directoryName}{$this->fileName}");
         }
 
         return true;
