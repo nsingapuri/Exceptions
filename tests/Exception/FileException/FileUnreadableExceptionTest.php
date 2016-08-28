@@ -22,7 +22,7 @@ class FileUnreadableExceptionTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text FileUnreadableException::__construct()
+     * Test FileUnreadableException::__construct()
      *
      * @return void
      *

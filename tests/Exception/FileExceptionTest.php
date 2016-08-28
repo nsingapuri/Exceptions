@@ -22,7 +22,7 @@ class FileExceptionTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text FileException::__construct()
+     * Test FileException::__construct()
      *
      * @return void
      *

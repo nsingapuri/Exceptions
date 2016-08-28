@@ -22,7 +22,7 @@ class RuntimeExceptionTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text RuntimeException::__construct()
+     * Test RuntimeException::__construct()
      *
      * @return void
      *

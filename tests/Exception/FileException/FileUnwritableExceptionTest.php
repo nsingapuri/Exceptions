@@ -22,7 +22,7 @@ class FileUnwritableExceptionTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text FileUnwriteableException::__construct()
+     * Test FileUnwriteableException::__construct()
      *
      * @return void
      *

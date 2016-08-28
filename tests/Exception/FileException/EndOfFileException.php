@@ -22,7 +22,7 @@ class EndOfFileExceptionTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text EndOfFileException::__construct()
+     * Test EndOfFileException::__construct()
      *
      * @return void
      *

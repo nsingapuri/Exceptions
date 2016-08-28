@@ -22,7 +22,7 @@ class ExceptionTest extends PHPUnit_Framework_TestCase
 
 
     /**
-     * Text Exception::__construct()
+     * Test Exception::__construct()
      *
      * @return void
      *
